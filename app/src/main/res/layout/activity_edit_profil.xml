@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    tools:context=".ui.profil.EditProfilActivity">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputName"
+        style="@style/parent"
+        android:layout_marginTop="@dimen/loginViewsMargin">
+        <EditText
+            android:textColor="@color/black"
+            android:id="@+id/editTextName"
+            style="@style/modifiedEditText"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:hint="@string/masukkan_username"
+
+            tools:ignore="Autofill" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:text="Jenis Kelamin"
+        android:layout_below="@id/textInputName"
+        android:id="@+id/tvjk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_below="@id/tvjk"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RadioButton
+            android:id="@+id/laki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-laki"
+            />
+        <RadioButton
+            android:id="@+id/pr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan"
+            />
+
+
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputAlamat"
+        style="@style/parent"
+        android:layout_below="@id/radiogroup"
+        android:layout_marginTop="@dimen/loginViewsMargin">
+        <EditText
+            android:textColor="@color/black"
+            android:id="@+id/editTextAlamat"
+            style="@style/modifiedEditText"
+            android:hint="@string/masukkan_alamat"
+
+            android:gravity="top|left"
+
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:lines="3"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:scrollHorizontally="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Ubah"
+        android:id="@+id/btn_ubah"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnpswd"
+        android:background="@drawable/btn_bg_transparant"
+        android:text="Ubah Kata Sandi"
+        android:textColor="@color/colorPrimary"
+        android:layout_above="@id/btn_ubah"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+
+</RelativeLayout>

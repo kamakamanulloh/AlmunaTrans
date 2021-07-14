@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".seats.PilihKursiActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        tools:ignore="RtlSymmetry">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ket"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/seat_normal_selected"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dipilih"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/seat_normal_booked"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Terisi"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/seat_normal"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tersedia"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_below="@id/ket"
+            android:background="@color/quantum_yellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:text="depan"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:id="@+id/txtdepan"/>
+
+        <TextView
+            android:text="Waktu"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_waktu"
+            android:layout_below="@id/txtdepan"
+            android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/txtdepan"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:id="@+id/stir"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/steering"
+            android:layout_alignParentRight="true" />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stir"
+            android:id="@+id/line"
+
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_a"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:listitem="@layout/list_kursi_a"
+                android:layout_gravity="center"
+
+             />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_b"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                tools:listitem="@layout/list_kursi_b"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_c"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                tools:listitem="@layout/list_kursi_c"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_d"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                tools:listitem="@layout/list_kursi_d"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_below="@id/line"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@color/quantum_yellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:text="Lihat Denah Kursi"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:id="@+id/txtistarahat"/>
+
+        <Button
+            android:layout_below="@id/txtistarahat"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="#0091EA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:text="Lanjutkan Pembayaran"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:id="@+id/btnlanjut"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

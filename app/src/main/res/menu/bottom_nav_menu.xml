@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_card_travel_black_24dp"
+        android:title="Tiket Saya" />
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_promo"-->
+<!--        android:icon="@drawable/ic_discount"-->
+<!--        android:title="Promo" />-->
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_account_box_black_24dp"
+        android:title="@string/akun_saya" />
+
+    <item
+        android:id="@+id/navigation_sewabus"
+        android:icon="@drawable/ic_directions_bus_black_24dp"
+        android:title="@string/sewa_bus" />
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_message"-->
+<!--        android:icon="@drawable/ic_message_black_24dp"-->
+<!--        android:title="@string/saran_dan_kritik" />-->
+
+</menu>

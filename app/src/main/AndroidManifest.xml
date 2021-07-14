@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.softwarepintar.almuna_trans">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/NoActionBarTheme"
+        tools:ignore="UnusedAttribute"
+        tools:replace="android:allowBackup">
+        <activity android:name=".seats.PilihKursiKembaliActivity"></activity>
+        <activity android:name=".seats.PilihKursiActivity"
+            android:noHistory="true"/>
+        <activity android:name=".ui.TiketSaya.tiketbelumkomfirm.DetailTiketBelumKomfirmActivity" />
+        <activity android:name=".midtransmodel.MidtransPaymentActivity" />
+        <activity android:name=".lupa_sandi.OtpActivity" />
+        <activity
+            android:name=".ui.profil.ResetPasswordActivity"
+            android:label="Edit Password"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".lupa_sandi.LupaSandiActivity" />
+        <activity android:name=".Info.DetailInfoActivity" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".almunapay.TopupPetugasActivity"
+            android:label="Petugas"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Booking.Booking4Activity" />
+        <activity android:name=".Booking.Booking3Activity" />
+        <activity
+            android:name=".ui.profil.EditProfilActivity"
+            android:label="Edit Profil"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".almunapay.PetunjukActivity" />
+        <activity android:name=".almunapay.TransferActivity" />
+        <activity android:name=".ui.TiketSaya.sewa.TiketSewaActivity" />
+        <activity android:name=".ui.TiketSaya.sewa.DetaillSewaActivity" />
+        <activity android:name=".ui.TiketSaya.lihattiket.LihatTiketActivity" />
+        <activity android:name=".ui.TiketSaya.tiketmenunggu.DetailTiketMenungguActivity" />
+        <activity android:name=".ui.TiketSaya.tiketaktif.DetailTiketActivity" />
+        <activity
+            android:name=".ui.sewabus.pembayaran.PembayaranSewaActivity"
+            android:label="Pembayaran Sewa"
+            android:noHistory="true"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Booking.Booking2Activity" />
+        <activity
+            android:name=".payment.PembayaranActivity"
+            android:label="List Pembayaran"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.sewabus.paketsewa.PaketSewaActivity"
+            android:noHistory="true"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.sewabus.FormSewaActivity"
+            android:label="Form Penyewaan"
+            android:noHistory="true"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Booking.BookingSatuActivity"
+            android:theme="@style/NoActionBarTheme"
+            tools:ignore="InnerclassSeparator"
+        />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".DetailBus.DetailBusActivity"
+            android:theme="@style/AppTheme"
+            tools:ignore="InnerclassSeparator"
+           />
+        <activity
+            android:name=".Auth.CodeActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Register.RegisterActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Login.LoginActivity"
+            android:noHistory="true"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:noHistory="true"
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+         />
+    </application>
+
+</manifest>

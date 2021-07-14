@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Almuna Trans</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="masukkan_username">Masukkan Username Login</string>
+    <string name="masukkan_password">Masukkan Kata Sandi</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="api_key_gmaps">AIzaSyDjU_1-NrNX248dSNyM4CNmKwlcOsSPKbo</string>
+
+    <string name="login_email_hint">Masukkan Email</string>
+    <string name="masukkan_nohp">Masukkan No HP</string>
+    <string name="silahkan_nregister_akun">Silahkan\nRegister Akun !</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="isikan_kode_anda_di_bawah_ini">Isi Kode OTP</string>
+    <string name="resend_code">Kirim Ulang Kode</string>
+    <string name="otp_success">Kode Valid</string>
+    <string name="masukkan_alamat">Masukkan Alamat</string>
+    <string name="lihat_semua">Lihat Semua</string>
+    <string name="akun_saya">Akun Saya</string>
+    <string name="sewa_bus">Sewa Bus</string>
+    <string name="saran_dan_kritik">Saran dan Kritik</string>
+    <string name="detail_perjalanan">Detail Perjalanan</string>
+    <string name="lanjutkan">Lanjutkan</string>
+    <string name="trayek">trayek</string>
+    <string name="next">Lanjutkan</string>
+    <array name="jml_penumpang">
+
+        <item>1 Dewasa</item>
+        <item>2 Dewasa</item>
+        <item>3 Dewasa</item>
+        <item>4 Dewasa</item>
+    </array>
+
+    <array name="jml_bayi">
+        <item>0 Bayi</item>
+        <item>1 Bayi</item>
+    </array>
+
+    <array name="jenisid">
+
+        <item>KTP</item>
+        <item>SIM</item>
+        <item>Paspor</item>
+        <item>Lainnya</item>
+    </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pilihasal">Pilih Kota Asal</string>
+    <string name="pilihtujuan">Pilih Kota Tujuan</string>
+    <string name="pilihagen">Pilih Agen</string>
+
+
+</resources>

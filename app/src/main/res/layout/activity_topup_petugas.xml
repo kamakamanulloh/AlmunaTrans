@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".almunapay.TopupPetugasActivity"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cara Meminta Petugas Top Up Saldo Almuna Pay"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Biaya Admin Gratis Min Rp 100"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:id="@+id/garis"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+
+
+        android:background="@color/black"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:justificationMode="inter_word"
+        android:text="1. Anda dapat menggunakan pada saat berada di armada Almuna Trans. "/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:justificationMode="inter_word"
+        android:layout_marginBottom="10dp"
+        android:text="2. Bilang ke petugas kondektur yang sedang bersamamu kalau mau di top up saldo."/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:justificationMode="inter_word"
+        android:text="3. Berikan uang tunai sejumlah Almuna Pay yang di transfer ke kamu."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:justificationMode="inter_word"
+        android:text="4. Pastikan saldo kamu sudah bertambah Caranya klik riwayat pada menu utama."/>
+
+
+
+</LinearLayout>

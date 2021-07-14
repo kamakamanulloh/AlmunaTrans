@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.softwarepintar.almuna_trans.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.softwarepintar.almuna_trans.ui.TiketSaya.TiketSayaFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_tiketsaya" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.softwarepintar.almuna_trans.ui.profil.ProfilFragment"
+        android:label="@string/akun_saya"
+        tools:layout="@layout/fragment_profil" />
+
+    <fragment
+        android:id="@+id/navigation_sewabus"
+        android:name="com.softwarepintar.almuna_trans.ui.sewabus.SewaBusFragment"
+        android:label="@string/sewa_bus"
+        tools:layout="@layout/sewa_bus_fragment"
+        />
+
+    <fragment
+        android:id="@+id/navigation_message"
+        android:name="com.softwarepintar.almuna_trans.ui.kritiksaran.KriktikSaranFragment"
+        android:label="@string/saran_dan_kritik"
+        tools:layout="@layout/kriktik_saran_fragment"/>
+
+</navigation>

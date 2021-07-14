@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "37966952824",
+    "firebase_url": "https://almuna-trans-419cd.firebaseio.com",
+    "project_id": "almuna-trans-419cd",
+    "storage_bucket": "almuna-trans-419cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37966952824:android:8f6bc12fbdacf6a9ef308d",
+        "android_client_info": {
+          "package_name": "com.softwarepintar.almuna_trans"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37966952824-630h8et2b4663d0eiskfdrd40134h3vu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.softwarepintar.almuna_trans",
+            "certificate_hash": "26a01c75876c9d749cb25b68bf7c94fb1201963f"
+          }
+        },
+        {
+          "client_id": "37966952824-i1e104ajq4va0maj25meses0cjh411sk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDioS2DKAXy3F3m1Zo1eBv2YOB-3Ur5Wys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37966952824-i1e104ajq4va0maj25meses0cjh411sk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

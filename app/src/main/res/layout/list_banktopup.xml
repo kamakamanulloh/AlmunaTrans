@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/ivbank"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ivbank"
+        android:text="Bank"
+        android:id="@+id/tvbank"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+
+
+    <View
+        android:id="@+id/garis3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="2dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+
+        android:layout_below="@id/ivbank"
+        android:background="@color/black" />
+
+
+
+</RelativeLayout>

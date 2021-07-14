@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:src="@drawable/ic_undraw_feeling_blue_4b7q"/>
+
+
+    <TextView
+        android:id="@+id/txt"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="Jadwal yang anda pilih tidak tersedia"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textColor="@color/navy_blue.primary"
+        android:textSize="20sp"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/rvjadwalkembali"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+
+
+
+        android:layout_marginBottom="40dp"
+
+        />
+
+
+</RelativeLayout>

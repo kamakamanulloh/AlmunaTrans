@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#DCDCDC"
+
+    android:layout_height="match_parent"
+    tools:context=".DetailBus.DetailBusActivity">
+
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="#DCDCDC"
+            >
+
+            <TextView
+                android:id="@+id/asal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="5dp"
+                android:text="Detail Bus Berangkat"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@id/asal"
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+              >
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spek"
+                        android:textSize="22sp"
+                        android:textColor="@android:color/holo_blue_light"
+                        android:text="Spesifikasi"
+
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/spek"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_nm"
+                        android:text="Nama "/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/spek"
+                        android:layout_toRightOf="@id/tv_nm"
+                        android:id="@+id/tv_bus"
+                        android:text=" "
+
+                        android:textColor="@color/black"
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+
+                        android:textSize="18sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/tv_nm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_kursi"
+                        android:text="Jumlah "/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_bus"
+                        android:layout_toRightOf="@id/tv_kursi"
+                        android:id="@+id/tv_jmlkursi"
+                        android:text=" 40 Kursi"
+
+                        android:textColor="@color/black"
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_kapasitas"
+                        android:textSize="18sp"
+                        android:layout_below="@id/tv_kursi"
+
+                        android:text="Format Kursi "/>
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv_kapasitas"
+                        android:id="@+id/tv_jmlkapasitas"
+                        android:text=" 2 - 2"
+                        android:layout_below="@id/tv_kursi"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        tools:ignore="RtlHardcoded" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@+id/card1"
+                android:id="@+id/card2"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textSize="22sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fasilitas Bus"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/holo_blue_light"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rv_fasilitas"
+                        android:orientation="horizontal"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@+id/card2"
+                android:id="@+id/card_fasilitas_jalan"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textSize="22sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fasilitas Perjalanan"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/holo_blue_light"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rv_fasilitas_jalan"
+                        android:orientation="horizontal"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@id/card_fasilitas_jalan"
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin">
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textSize="22sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Info Trayek"
+                        android:textColor="@android:color/holo_blue_light"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/tv_trayek"
+                        android:text="Madura - Jakarta"/>
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/tv_berangkat"
+                        android:text="00-00-0000"/>
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:id="@+id/relative"
+                android:layout_below="@id/card3">
+                <TextView
+                    android:id="@+id/tujuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginBottom="5dp"
+                    android:text="Detail Bus Kembali"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_below="@id/tujuan"
+                    android:id="@+id/card1_kembali"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/spek_kembali"
+                            android:textSize="22sp"
+                            android:textColor="@android:color/holo_blue_light"
+                            android:text="Spesifikasi"
+
+                            android:textStyle="bold"
+                            />
+                        <TextView
+                            android:textSize="18sp"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@id/spek_kembali"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_nm_kembali"
+                            android:text="Nama "/>
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/spek_kembali"
+                            android:layout_toRightOf="@id/tv_nm_kembali"
+                            android:id="@+id/tv_bus_kembali"
+                            android:text=" "
+
+                            android:textColor="@color/black"
+                            tools:ignore="RtlHardcoded" />
+
+                        <TextView
+                            android:textSize="18sp"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@id/tv_nm_kembali"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_kursi_kembali"
+                            android:text="Jumlah "/>
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_bus_kembali"
+                            android:layout_toRightOf="@id/tv_kursi_kembali"
+                            android:id="@+id/tv_jmlkursi_kembali"
+                            android:text=" 40 Kursi"
+
+                            android:textColor="@color/black"
+                            tools:ignore="RtlHardcoded" />
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_kapasitas_kembali"
+                            android:textSize="18sp"
+                            android:layout_below="@id/tv_kursi_kembali"
+
+                            android:text="Format Kursi "/>
+                        <TextView
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/tv_kapasitas_kembali"
+                            android:id="@+id/tv_jmlkapasitas_kembali"
+                            android:text=" 2 - 2"
+                            android:layout_below="@id/tv_kursi_kembali"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black"
+                            tools:ignore="RtlHardcoded" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_below="@+id/card1_kembali"
+                    android:id="@+id/card2_kembali"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:orientation="vertical">
+                        <TextView
+                            android:textSize="22sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Fasilitas"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/holo_blue_light"/>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rv_fasilitas_kembali"
+                            android:orientation="horizontal"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_below="@+id/card2_kembali"
+                    android:id="@+id/card_fasilitas_jalan_kembali"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:orientation="vertical">
+                        <TextView
+                            android:textSize="22sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Fasilitas Perjalanan"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/holo_blue_light"/>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rv_fasilitas_jalan_kembali"
+                            android:orientation="horizontal"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_below="@id/card_fasilitas_jalan_kembali"
+                    android:id="@+id/card3_kembali"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin">
+                    <LinearLayout
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:textSize="22sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Info Trayek"
+                            android:textColor="@android:color/holo_blue_light"
+                            android:textStyle="bold"
+                            />
+                        <TextView
+                            android:textSize="18sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/tv_trayek_kembali"
+                            android:text="Madura - Jakarta"/>
+
+                        <TextView
+                            android:textSize="18sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/tv_berangkat_kembali"
+                            android:text="00-00-0000"/>
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@id/relative"
+                android:id="@+id/card4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textSize="24sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/holo_blue_light"
+                        android:text="Info Penggunaan Tiket"/>
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="* E-Tiket akan tersedia setelah proses pembayaran sukses"/>
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="* Tunjukkan E-Tiketmu dan tanda pengenal yang kamu daftarkan kepada petugas"/>
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="* Anda dapat menggunakan E-Tiket yang ada di Almuna Trans Apps"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_height="60dp">
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:text="Pesan Bus"
+                android:id="@+id/btnpesan"
+                android:textAlignment="center"
+                android:textColor="@color/whiteTextColor"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/activity_vertical_margin"
+
+                android:background="@drawable/bg_button_blue"
+                android:layout_gravity="center_horizontal" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
